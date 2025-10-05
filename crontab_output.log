@@ -1,0 +1,5 @@
+PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /var/www/html/notifications/NotificationSender.php:36
+Stack trace:
+#0 /var/www/html/notifications/scheduler.php(53): NotificationSender->send()
+#1 {main}
+  thrown in /var/www/html/notifications/NotificationSender.php on line 36

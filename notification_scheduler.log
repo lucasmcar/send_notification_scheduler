@@ -1,0 +1,244 @@
+2025-10-05T22:10:01+00:00 INFO: Scheduler started
+2025-10-05T22:10:01+00:00 INFO: Processing device {"device_id":1,"token":"token_device_1"}
+2025-10-05T22:10:01+00:00 INFO: Attempt {"job":"1","attempt":1}
+2025-10-05T22:15:01+00:00 INFO: Scheduler started
+2025-10-05T22:15:01+00:00 INFO: Processing device {"device_id":1,"token":"token_device_1"}
+2025-10-05T22:15:01+00:00 INFO: Attempt {"job":"2","attempt":1}
+2025-10-05T22:15:02+00:00 INFO: Sent success {"job":"2","attempts":1,"device":1}
+2025-10-05T22:15:02+00:00 INFO: Attempt {"job":"3","attempt":1}
+2025-10-05T22:15:03+00:00 INFO: Sent success {"job":"3","attempts":1,"device":1}
+2025-10-05T22:15:03+00:00 INFO: Attempt {"job":"4","attempt":1}
+2025-10-05T22:15:06+00:00 INFO: Sent success {"job":"4","attempts":1,"device":1}
+2025-10-05T22:15:06+00:00 INFO: Attempt {"job":"5","attempt":1}
+2025-10-05T22:15:06+00:00 ERROR: Simulated send failure {"token":"token_device_1","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:06+00:00 ERROR: Send failed {"job":"5","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:06+00:00 INFO: Attempt {"job":"5","attempt":2}
+2025-10-05T22:15:07+00:00 INFO: Sent success {"job":"5","attempts":2,"device":1}
+2025-10-05T22:15:07+00:00 INFO: Attempt {"job":"6","attempt":1}
+2025-10-05T22:15:08+00:00 INFO: Sent success {"job":"6","attempts":1,"device":1}
+2025-10-05T22:15:08+00:00 INFO: Processing device {"device_id":2,"token":"token_device_2"}
+2025-10-05T22:15:08+00:00 INFO: Attempt {"job":"7","attempt":1}
+2025-10-05T22:15:09+00:00 INFO: Sent success {"job":"7","attempts":1,"device":2}
+2025-10-05T22:15:09+00:00 INFO: Attempt {"job":"8","attempt":1}
+2025-10-05T22:15:09+00:00 INFO: Sent success {"job":"8","attempts":1,"device":2}
+2025-10-05T22:15:10+00:00 INFO: Attempt {"job":"9","attempt":1}
+2025-10-05T22:15:10+00:00 INFO: Sent success {"job":"9","attempts":1,"device":2}
+2025-10-05T22:15:10+00:00 INFO: Attempt {"job":"10","attempt":1}
+2025-10-05T22:15:10+00:00 ERROR: Simulated send failure {"token":"token_device_2","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:10+00:00 ERROR: Send failed {"job":"10","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:10+00:00 INFO: Attempt {"job":"10","attempt":2}
+2025-10-05T22:15:11+00:00 INFO: Sent success {"job":"10","attempts":2,"device":2}
+2025-10-05T22:15:11+00:00 INFO: Attempt {"job":"11","attempt":1}
+2025-10-05T22:15:12+00:00 INFO: Sent success {"job":"11","attempts":1,"device":2}
+2025-10-05T22:15:12+00:00 INFO: Processing device {"device_id":3,"token":"token_device_3"}
+2025-10-05T22:15:12+00:00 INFO: Attempt {"job":"12","attempt":1}
+2025-10-05T22:15:13+00:00 INFO: Sent success {"job":"12","attempts":1,"device":3}
+2025-10-05T22:15:13+00:00 INFO: Attempt {"job":"13","attempt":1}
+2025-10-05T22:15:13+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:13+00:00 ERROR: Send failed {"job":"13","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:13+00:00 INFO: Attempt {"job":"13","attempt":2}
+2025-10-05T22:15:13+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:13+00:00 ERROR: Send failed {"job":"13","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:13+00:00 INFO: Attempt {"job":"13","attempt":3}
+2025-10-05T22:15:14+00:00 INFO: Sent success {"job":"13","attempts":3,"device":3}
+2025-10-05T22:15:14+00:00 INFO: Attempt {"job":"14","attempt":1}
+2025-10-05T22:15:15+00:00 INFO: Sent success {"job":"14","attempts":1,"device":3}
+2025-10-05T22:15:15+00:00 INFO: Attempt {"job":"15","attempt":1}
+2025-10-05T22:15:15+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:15+00:00 ERROR: Send failed {"job":"15","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:15+00:00 INFO: Attempt {"job":"15","attempt":2}
+2025-10-05T22:15:15+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:15+00:00 ERROR: Send failed {"job":"15","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:15+00:00 INFO: Attempt {"job":"15","attempt":3}
+2025-10-05T22:15:16+00:00 INFO: Sent success {"job":"15","attempts":3,"device":3}
+2025-10-05T22:15:16+00:00 INFO: Attempt {"job":"16","attempt":1}
+2025-10-05T22:15:17+00:00 INFO: Sent success {"job":"16","attempts":1,"device":3}
+2025-10-05T22:15:17+00:00 INFO: Processing device {"device_id":4,"token":"token_device_4"}
+2025-10-05T22:15:17+00:00 INFO: Attempt {"job":"17","attempt":1}
+2025-10-05T22:15:18+00:00 INFO: Sent success {"job":"17","attempts":1,"device":4}
+2025-10-05T22:15:18+00:00 INFO: Attempt {"job":"18","attempt":1}
+2025-10-05T22:15:18+00:00 ERROR: Simulated send failure {"token":"token_device_4","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:18+00:00 ERROR: Send failed {"job":"18","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:18+00:00 INFO: Attempt {"job":"18","attempt":2}
+2025-10-05T22:15:19+00:00 INFO: Sent success {"job":"18","attempts":2,"device":4}
+2025-10-05T22:15:19+00:00 INFO: Attempt {"job":"19","attempt":1}
+2025-10-05T22:15:19+00:00 ERROR: Simulated send failure {"token":"token_device_4","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:19+00:00 ERROR: Send failed {"job":"19","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:19+00:00 INFO: Attempt {"job":"19","attempt":2}
+2025-10-05T22:15:19+00:00 INFO: Sent success {"job":"19","attempts":2,"device":4}
+2025-10-05T22:15:20+00:00 INFO: Attempt {"job":"20","attempt":1}
+2025-10-05T22:15:20+00:00 INFO: Sent success {"job":"20","attempts":1,"device":4}
+2025-10-05T22:15:20+00:00 INFO: Attempt {"job":"21","attempt":1}
+2025-10-05T22:15:21+00:00 INFO: Sent success {"job":"21","attempts":1,"device":4}
+2025-10-05T22:15:21+00:00 INFO: Processing device {"device_id":5,"token":"token_device_5"}
+2025-10-05T22:15:21+00:00 INFO: Attempt {"job":"22","attempt":1}
+2025-10-05T22:15:22+00:00 INFO: Sent success {"job":"22","attempts":1,"device":5}
+2025-10-05T22:15:22+00:00 INFO: Attempt {"job":"23","attempt":1}
+2025-10-05T22:15:22+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:22+00:00 ERROR: Send failed {"job":"23","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:22+00:00 INFO: Attempt {"job":"23","attempt":2}
+2025-10-05T22:15:22+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:22+00:00 ERROR: Send failed {"job":"23","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:22+00:00 INFO: Attempt {"job":"23","attempt":3}
+2025-10-05T22:15:23+00:00 INFO: Sent success {"job":"23","attempts":3,"device":5}
+2025-10-05T22:15:23+00:00 INFO: Attempt {"job":"24","attempt":1}
+2025-10-05T22:15:23+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:23+00:00 ERROR: Send failed {"job":"24","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:23+00:00 INFO: Attempt {"job":"24","attempt":2}
+2025-10-05T22:15:23+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:23+00:00 ERROR: Send failed {"job":"24","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:23+00:00 INFO: Attempt {"job":"24","attempt":3}
+2025-10-05T22:15:25+00:00 INFO: Sent success {"job":"24","attempts":3,"device":5}
+2025-10-05T22:15:25+00:00 INFO: Attempt {"job":"25","attempt":1}
+2025-10-05T22:15:25+00:00 INFO: Sent success {"job":"25","attempts":1,"device":5}
+2025-10-05T22:15:25+00:00 INFO: Attempt {"job":"26","attempt":1}
+2025-10-05T22:15:25+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:25+00:00 ERROR: Send failed {"job":"26","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:26+00:00 INFO: Attempt {"job":"26","attempt":2}
+2025-10-05T22:15:26+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:26+00:00 ERROR: Send failed {"job":"26","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:15:26+00:00 INFO: Attempt {"job":"26","attempt":3}
+2025-10-05T22:15:27+00:00 INFO: Sent success {"job":"26","attempts":3,"device":5}
+2025-10-05T22:15:27+00:00 INFO: Scheduler finished
+2025-10-05T22:20:01+00:00 INFO: Scheduler started
+2025-10-05T22:20:01+00:00 INFO: Processing device {"device_id":1,"token":"token_device_1"}
+2025-10-05T22:20:01+00:00 INFO: Attempt {"job":"27","attempt":1}
+2025-10-05T22:20:02+00:00 INFO: Sent success {"job":"27","attempts":1,"device":1}
+2025-10-05T22:20:02+00:00 INFO: Attempt {"job":"28","attempt":1}
+2025-10-05T22:20:04+00:00 INFO: Sent success {"job":"28","attempts":1,"device":1}
+2025-10-05T22:20:05+00:00 INFO: Attempt {"job":"29","attempt":1}
+2025-10-05T22:20:06+00:00 INFO: Sent success {"job":"29","attempts":1,"device":1}
+2025-10-05T22:20:06+00:00 INFO: Attempt {"job":"30","attempt":1}
+2025-10-05T22:20:06+00:00 INFO: Sent success {"job":"30","attempts":1,"device":1}
+2025-10-05T22:20:07+00:00 INFO: Attempt {"job":"31","attempt":1}
+2025-10-05T22:20:07+00:00 INFO: Sent success {"job":"31","attempts":1,"device":1}
+2025-10-05T22:20:07+00:00 INFO: Processing device {"device_id":2,"token":"token_device_2"}
+2025-10-05T22:20:07+00:00 INFO: Attempt {"job":"32","attempt":1}
+2025-10-05T22:20:08+00:00 INFO: Sent success {"job":"32","attempts":1,"device":2}
+2025-10-05T22:20:08+00:00 INFO: Attempt {"job":"33","attempt":1}
+2025-10-05T22:20:09+00:00 INFO: Sent success {"job":"33","attempts":1,"device":2}
+2025-10-05T22:20:09+00:00 INFO: Attempt {"job":"34","attempt":1}
+2025-10-05T22:20:10+00:00 INFO: Sent success {"job":"34","attempts":1,"device":2}
+2025-10-05T22:20:10+00:00 INFO: Attempt {"job":"35","attempt":1}
+2025-10-05T22:20:10+00:00 INFO: Sent success {"job":"35","attempts":1,"device":2}
+2025-10-05T22:20:10+00:00 INFO: Attempt {"job":"36","attempt":1}
+2025-10-05T22:20:11+00:00 INFO: Sent success {"job":"36","attempts":1,"device":2}
+2025-10-05T22:20:11+00:00 INFO: Processing device {"device_id":3,"token":"token_device_3"}
+2025-10-05T22:20:12+00:00 INFO: Attempt {"job":"37","attempt":1}
+2025-10-05T22:20:12+00:00 INFO: Sent success {"job":"37","attempts":1,"device":3}
+2025-10-05T22:20:12+00:00 INFO: Attempt {"job":"38","attempt":1}
+2025-10-05T22:20:13+00:00 INFO: Sent success {"job":"38","attempts":1,"device":3}
+2025-10-05T22:20:13+00:00 INFO: Attempt {"job":"39","attempt":1}
+2025-10-05T22:20:14+00:00 INFO: Sent success {"job":"39","attempts":1,"device":3}
+2025-10-05T22:20:14+00:00 INFO: Attempt {"job":"40","attempt":1}
+2025-10-05T22:20:14+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:14+00:00 ERROR: Send failed {"job":"40","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:14+00:00 INFO: Attempt {"job":"40","attempt":2}
+2025-10-05T22:20:14+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:14+00:00 ERROR: Send failed {"job":"40","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:14+00:00 INFO: Attempt {"job":"40","attempt":3}
+2025-10-05T22:20:15+00:00 INFO: Sent success {"job":"40","attempts":3,"device":3}
+2025-10-05T22:20:15+00:00 INFO: Attempt {"job":"41","attempt":1}
+2025-10-05T22:20:15+00:00 ERROR: Simulated send failure {"token":"token_device_3","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:15+00:00 ERROR: Send failed {"job":"41","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:15+00:00 INFO: Attempt {"job":"41","attempt":2}
+2025-10-05T22:20:16+00:00 INFO: Sent success {"job":"41","attempts":2,"device":3}
+2025-10-05T22:20:16+00:00 INFO: Processing device {"device_id":4,"token":"token_device_4"}
+2025-10-05T22:20:16+00:00 INFO: Attempt {"job":"42","attempt":1}
+2025-10-05T22:20:16+00:00 INFO: Sent success {"job":"42","attempts":1,"device":4}
+2025-10-05T22:20:17+00:00 INFO: Attempt {"job":"43","attempt":1}
+2025-10-05T22:20:17+00:00 INFO: Sent success {"job":"43","attempts":1,"device":4}
+2025-10-05T22:20:17+00:00 INFO: Attempt {"job":"44","attempt":1}
+2025-10-05T22:20:17+00:00 ERROR: Simulated send failure {"token":"token_device_4","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:17+00:00 ERROR: Send failed {"job":"44","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:18+00:00 INFO: Attempt {"job":"44","attempt":2}
+2025-10-05T22:20:18+00:00 ERROR: Simulated send failure {"token":"token_device_4","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:18+00:00 ERROR: Send failed {"job":"44","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:18+00:00 INFO: Attempt {"job":"44","attempt":3}
+2025-10-05T22:20:18+00:00 INFO: Sent success {"job":"44","attempts":3,"device":4}
+2025-10-05T22:20:18+00:00 INFO: Attempt {"job":"45","attempt":1}
+2025-10-05T22:20:19+00:00 INFO: Sent success {"job":"45","attempts":1,"device":4}
+2025-10-05T22:20:19+00:00 INFO: Attempt {"job":"46","attempt":1}
+2025-10-05T22:20:20+00:00 INFO: Sent success {"job":"46","attempts":1,"device":4}
+2025-10-05T22:20:20+00:00 INFO: Processing device {"device_id":5,"token":"token_device_5"}
+2025-10-05T22:20:20+00:00 INFO: Attempt {"job":"47","attempt":1}
+2025-10-05T22:20:20+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:20+00:00 ERROR: Send failed {"job":"47","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:20+00:00 INFO: Attempt {"job":"47","attempt":2}
+2025-10-05T22:20:20+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:20+00:00 ERROR: Send failed {"job":"47","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:20+00:00 INFO: Attempt {"job":"47","attempt":3}
+2025-10-05T22:20:20+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:20+00:00 ERROR: Send failed {"job":"47","attempt":3,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:21+00:00 INFO: Attempt {"job":"47","attempt":4}
+2025-10-05T22:20:21+00:00 ERROR: Simulated send failure {"token":"token_device_5","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:21+00:00 ERROR: Send failed {"job":"47","attempt":4,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:20:21+00:00 ERROR: Device deleted after reaching max attempts {"device":5,"attempts":10}
+2025-10-05T22:20:21+00:00 INFO: Scheduler finished
+2025-10-05T22:25:01+00:00 INFO: Scheduler started
+2025-10-05T22:25:01+00:00 INFO: Processing device {"device_id":1,"token":"token_device_1"}
+2025-10-05T22:25:01+00:00 INFO: Attempt {"job":"48","attempt":1}
+2025-10-05T22:25:01+00:00 INFO: Sent success {"job":"48","attempts":1,"device":1}
+2025-10-05T22:25:01+00:00 INFO: Attempt {"job":"49","attempt":1}
+2025-10-05T22:25:01+00:00 ERROR: Simulated send failure {"token":"token_device_1","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:01+00:00 ERROR: Send failed {"job":"49","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:02+00:00 INFO: Attempt {"job":"49","attempt":2}
+2025-10-05T22:25:02+00:00 INFO: Sent success {"job":"49","attempts":2,"device":1}
+2025-10-05T22:25:02+00:00 INFO: Attempt {"job":"50","attempt":1}
+2025-10-05T22:25:04+00:00 INFO: Sent success {"job":"50","attempts":1,"device":1}
+2025-10-05T22:25:04+00:00 INFO: Attempt {"job":"51","attempt":1}
+2025-10-05T22:25:04+00:00 ERROR: Simulated send failure {"token":"token_device_1","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:04+00:00 ERROR: Send failed {"job":"51","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:04+00:00 INFO: Attempt {"job":"51","attempt":2}
+2025-10-05T22:25:05+00:00 INFO: Sent success {"job":"51","attempts":2,"device":1}
+2025-10-05T22:25:05+00:00 INFO: Attempt {"job":"52","attempt":1}
+2025-10-05T22:25:05+00:00 INFO: Sent success {"job":"52","attempts":1,"device":1}
+2025-10-05T22:25:05+00:00 INFO: Processing device {"device_id":2,"token":"token_device_2"}
+2025-10-05T22:25:05+00:00 INFO: Attempt {"job":"53","attempt":1}
+2025-10-05T22:25:06+00:00 INFO: Sent success {"job":"53","attempts":1,"device":2}
+2025-10-05T22:25:06+00:00 INFO: Attempt {"job":"54","attempt":1}
+2025-10-05T22:25:06+00:00 ERROR: Simulated send failure {"token":"token_device_2","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:06+00:00 ERROR: Send failed {"job":"54","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:07+00:00 INFO: Attempt {"job":"54","attempt":2}
+2025-10-05T22:25:07+00:00 ERROR: Simulated send failure {"token":"token_device_2","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:07+00:00 ERROR: Send failed {"job":"54","attempt":2,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:07+00:00 INFO: Attempt {"job":"54","attempt":3}
+2025-10-05T22:25:08+00:00 INFO: Sent success {"job":"54","attempts":3,"device":2}
+2025-10-05T22:25:08+00:00 INFO: Attempt {"job":"55","attempt":1}
+2025-10-05T22:25:08+00:00 ERROR: Simulated send failure {"token":"token_device_2","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:08+00:00 ERROR: Send failed {"job":"55","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:08+00:00 INFO: Attempt {"job":"55","attempt":2}
+2025-10-05T22:25:08+00:00 INFO: Sent success {"job":"55","attempts":2,"device":2}
+2025-10-05T22:25:09+00:00 INFO: Attempt {"job":"56","attempt":1}
+2025-10-05T22:25:10+00:00 INFO: Sent success {"job":"56","attempts":1,"device":2}
+2025-10-05T22:25:10+00:00 INFO: Attempt {"job":"57","attempt":1}
+2025-10-05T22:25:10+00:00 ERROR: Simulated send failure {"token":"token_device_2","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:10+00:00 ERROR: Send failed {"job":"57","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:10+00:00 INFO: Attempt {"job":"57","attempt":2}
+2025-10-05T22:25:12+00:00 INFO: Sent success {"job":"57","attempts":2,"device":2}
+2025-10-05T22:25:12+00:00 INFO: Processing device {"device_id":3,"token":"token_device_3"}
+2025-10-05T22:25:12+00:00 INFO: Attempt {"job":"58","attempt":1}
+2025-10-05T22:25:12+00:00 INFO: Sent success {"job":"58","attempts":1,"device":3}
+2025-10-05T22:25:12+00:00 INFO: Attempt {"job":"59","attempt":1}
+2025-10-05T22:25:13+00:00 INFO: Sent success {"job":"59","attempts":1,"device":3}
+2025-10-05T22:25:13+00:00 INFO: Attempt {"job":"60","attempt":1}
+2025-10-05T22:25:14+00:00 INFO: Sent success {"job":"60","attempts":1,"device":3}
+2025-10-05T22:25:14+00:00 INFO: Attempt {"job":"61","attempt":1}
+2025-10-05T22:25:15+00:00 INFO: Sent success {"job":"61","attempts":1,"device":3}
+2025-10-05T22:25:15+00:00 INFO: Attempt {"job":"62","attempt":1}
+2025-10-05T22:25:15+00:00 INFO: Sent success {"job":"62","attempts":1,"device":3}
+2025-10-05T22:25:16+00:00 INFO: Processing device {"device_id":4,"token":"token_device_4"}
+2025-10-05T22:25:16+00:00 INFO: Attempt {"job":"63","attempt":1}
+2025-10-05T22:25:16+00:00 INFO: Sent success {"job":"63","attempts":1,"device":4}
+2025-10-05T22:25:16+00:00 INFO: Attempt {"job":"64","attempt":1}
+2025-10-05T22:25:16+00:00 ERROR: Simulated send failure {"token":"token_device_4","error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:16+00:00 ERROR: Send failed {"job":"64","attempt":1,"error":{"code":"SIMULATED_ERROR","message":"Simulated network error"}}
+2025-10-05T22:25:17+00:00 INFO: Attempt {"job":"64","attempt":2}
+2025-10-05T22:25:17+00:00 INFO: Sent success {"job":"64","attempts":2,"device":4}
+2025-10-05T22:25:17+00:00 INFO: Attempt {"job":"65","attempt":1}
+2025-10-05T22:25:18+00:00 INFO: Sent success {"job":"65","attempts":1,"device":4}
+2025-10-05T22:25:18+00:00 INFO: Attempt {"job":"66","attempt":1}
+2025-10-05T22:25:19+00:00 INFO: Sent success {"job":"66","attempts":1,"device":4}
+2025-10-05T22:25:19+00:00 INFO: Attempt {"job":"67","attempt":1}
+2025-10-05T22:25:20+00:00 INFO: Sent success {"job":"67","attempts":1,"device":4}
+2025-10-05T22:25:20+00:00 INFO: Scheduler finished
