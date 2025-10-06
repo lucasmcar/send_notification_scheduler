@@ -1,5 +1,4 @@
 <?php
-// Ajuste aqui suas credenciais MySQL
 return [
     'db' => [
         'host' => '127.0.0.1',

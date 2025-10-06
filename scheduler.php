@@ -50,12 +50,14 @@ foreach ($devices as $device) {
             // Send
             $title = $template['title'];
             $body = $template['subtitle'] . ' - ' . ($template['content'] ?? '');
-            $res = $sender->send($fcmToken, $title, $body, ['template' => $template['id_notification_template'] ?? $template['id'] ]);
+            $res = $sender->send($fcmToken, $title, $body, ['template' => $template['id_notification_template'] ?? $template['id']]);
 
             if ($res['success']) {
                 $sent = true;
-                $repo->updateJob($jobId, 'sent', $attempts, null);
+                $repo->updateJob($jobId, 'sent', $attempts, null, $attempts);
                 $repo->insertNotificationRecord($userId, $template, $body);
+                //Se for enviado zera o contador de tentativas
+                $repo->removeDeviceAttempts($deviceId);
                 $logger->info("Sent success", ['job' => $jobId, 'attempts' => $attempts, 'device' => $deviceId]);
                 break;
             } else {
@@ -67,7 +69,7 @@ foreach ($devices as $device) {
                 // update job attempts
                 $repo->updateJob($jobId, 'pending', $attempts, $lastError);
 
-                // increment device attempts
+                // increment device attemptss
                 $repo->incrementDeviceAttempts($deviceId);
 
                 // check device attempts total
@@ -77,11 +79,21 @@ foreach ($devices as $device) {
                 $deviceAttempts = (int)($row['attempts'] ?? 0);
 
                 if ($deviceAttempts >= $maxAttempts) {
-                    // delete device
+                    // Atualiza o job com o total de tentativas acumuladas do dispositivo
+                    $repo->updateJob($jobId, 'deleted', $deviceAttempts, $lastError);
+
+                    // Deleta o dispositivo
                     $repo->deleteDevice($deviceId);
-                    $repo->updateJob($jobId, 'deleted', $attempts, $lastError);
-                    $logger->error("Device deleted after reaching max attempts", ['device' => $deviceId, 'attempts' => $deviceAttempts]);
-                    break 2; // break out to next device (we deleted it)
+
+                    // Log
+                    $logger->error("Device deleted after reaching max attempts", [
+                        'device' => $deviceId,
+                        'job' => $jobId,
+                        'job_attempts' => $attempts,
+                        'device_attempts' => $deviceAttempts
+                    ]);
+
+                    break 2;
                 }
 
                 // small sleep to avoid busy loop (configurável)
